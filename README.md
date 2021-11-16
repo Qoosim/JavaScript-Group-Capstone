@@ -1,4 +1,4 @@
-# webpack-boilerplate
+# JavaScript Group Capstone Project
 
 > This is a simple but powerful webpack boilerplate where I configured basic settings for webpack like HtmlWebpackPlugin, css, local dev server and much more. This will be used as a template for any JavaScript Project. 
 
@@ -14,7 +14,7 @@ Enter this in your terminal 👇
 ``` 
 and you can start building your own project on it.
 
-## Author
+## Authors
 
 👤 **Qoosim AbdulGhaniyy**
 
