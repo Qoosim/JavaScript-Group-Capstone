@@ -7,11 +7,11 @@
   font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, .btn, .navbar-brand {
+h1, h1 span, h2, h3, h4, h5, h6, .btn, .navbar-brand, .navbar-brand span {
   font-family: 'Poppins', sans-serif;
 }
 
-header {
+body {
   background: bisque;
 }
 
@@ -59,4 +59,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.meal-img {
+  height: 200px;
+  overflow: hidden;
+}
+
+.meal-img img {
+  width: 100%;
 }
