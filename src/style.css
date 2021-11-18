@@ -74,10 +74,22 @@ body {
 }
 
 .meal-img {
-  height: 200px;
+  height: 250px;
   overflow: hidden;
 }
 
 .meal-img img {
   width: 100%;
+}
+
+.recipe-meal-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+::placeholder {
+  font-style: italic;
 }
