@@ -1,4 +1,6 @@
 import './style.css';
-import getMeals from './functions';
+import {
+  getMealList,
+} from './functions';
 
-getMeals();
+getMealList();
