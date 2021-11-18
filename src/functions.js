@@ -3,7 +3,7 @@ const displayMeals = (food) => {
 
   const foodDiv = document.createElement('div');
   foodDiv.className = 'col-lg-4';
-  const foodInfo = `
+  foodDiv.innerHTML = `
       <div class="meal-item text-center card shadow mb-4 border-0">
         <div class="meal-img bg-light">
           <img src="${food.strMealThumb}" alt="Meal Image">
@@ -13,7 +13,6 @@ const displayMeals = (food) => {
         </div>
       </div>
     `;
-  foodDiv.innerHTML = foodInfo;
   foodItemsDiv.appendChild(foodDiv);
 };
 
