@@ -9,7 +9,13 @@ const displayMeals = (food) => {
           <img src="${food.strMealThumb}" alt="Meal Image">
         </div>
         <div class="meal-name">
-          <h3 class="fs-6 my-3">${food.strMeal}</h3>
+          <h3 class="fs-6 my-3">${food.strMeal}&nbsp;&nbsp;<i class="bi bi-heart" role="button"></i></h3>
+        </div>
+        <div class="like-count">
+          <p>2 likes</p>
+        </div>
+        <div class="comment">
+          <button class="btn btn-light">Comments</button>
         </div>
       </div>
     `;
