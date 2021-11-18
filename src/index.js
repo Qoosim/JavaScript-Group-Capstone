@@ -1,12 +1,7 @@
 import './style.css';
-import getMeals from './functions';
+import getMeals from './getMeals';
+import mealList from './functions';
 
-const likesCounter = (target, likesArr, numOfLikes) => {
-  likesArr.forEach((obj) => {
-    if (obj.item_id === target.id) {
-      numOfLikes.innerHTML = `${obj.likes} Likes`;
-    }
-  });
-};
-
-getMeals();
+window.addEventListener('load', async () => {
+  mealList(await getMeals());
+});
