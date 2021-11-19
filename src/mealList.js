@@ -2,6 +2,7 @@
 import createLike from './createLike';
 import getLikes from './getLikes';
 import mealCounter from './mealCounter';
+import commentCounter from './commentCounter';
 
 const mainDiv = document.querySelector('#food-items');
 const mealDetailsContent = document.querySelector('.meal-details-content');
@@ -104,7 +105,7 @@ const getComment = async (item) => {
   const ul = document.querySelector('#list-comment');
   ul.innerHTML = '';
   const h3 = document.querySelector('.comment-count');
-  h3.innerHTML = `Comments(${myComment.length ? myComment.length : 0})`;
+  h3.innerHTML = `Comments(${commentCounter(myComment)})`;
   if (!myComment.length) myComment = [];
   myComment.forEach((comment) => {
     ul.innerHTML += `
