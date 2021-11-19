@@ -127,6 +127,4 @@ closeBtn.addEventListener('click', () => {
   mealDetailsContent.parentElement.classList.remove('showComment');
 });
 
-export {
-  getMealList,
-};
+export default getMealList;
