@@ -31,7 +31,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #000;
-  background: rgb(255, 215, 0); /* rgb(197, 99, 20) */
+  background: rgb(255, 215, 0);
   width: 50%;
   height: 100%;
   overflow-y: scroll;
