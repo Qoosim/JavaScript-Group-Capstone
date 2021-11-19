@@ -92,4 +92,6 @@ body {
 
 ::placeholder {
   font-style: italic;
+.like-btn {
+  cursor: pointer;
 }
