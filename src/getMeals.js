@@ -1,22 +1,16 @@
 import getLikes from "./getLikes";
 import createLike from "./createLike";
-
-const likesCounter = (target, likesArr, numOfLikes) => {
-  likesArr.forEach((obj) => {
-    if (obj.item_id === target.id) {
-      numOfLikes.innerHTML = `${obj.likes} Likes`;
-    }
-  });
-};
+import mealsCounter from "./functions";
 
 const getMeals = async () => {
   const foodItemsDiv = document.getElementById('food-items');
+  const homeCount = document.querySelector('#meal-count');
 
   const response = await fetch(
     'https://www.themealdb.com/api/json/v1/1/filter.php?a=indian',
   );
   const data = await response.json();
-  console.log(data.meals);
+  homeCount.innerHTML = mealsCounter(data.meals);
 
   data.meals.forEach( food => {
     const foodDiv = document.createElement('div');
