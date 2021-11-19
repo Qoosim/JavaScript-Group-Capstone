@@ -1,7 +1,7 @@
 /* eslint-disable no-await-in-loop */
-import createLike from './createLike.js';
-import getLikes from './getLikes.js';
-import mealCounter from './mealCounter.js';
+import createLike from './createLike';
+import getLikes from './getLikes';
+import mealCounter from './mealCounter';
 
 const mainDiv = document.querySelector('#food-items');
 
