@@ -1,4 +1,7 @@
 import './style.css';
-import getMeals from './functions';
+import getMeals from './getMeals';
+import mealList from './mealList';
 
-getMeals();
+window.addEventListener('load', async () => {
+  mealList(await getMeals());
+});
