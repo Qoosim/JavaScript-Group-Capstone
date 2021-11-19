@@ -1,5 +1,5 @@
 const foodItemsDiv = document.getElementById('food-items');
-const mealCount = document.querySelector('#meal-count');
+const mealCount = document.querySelector('#home-count');
 const mealDetailsContent = document.querySelector('.meal-details-content');
 const closeBtn = document.querySelector('.close-btn');
 
@@ -10,6 +10,7 @@ const getMealList = async () => {
   const response = await fetch(url);
   const data = await response.json();
   data.meals.forEach((food) => {
+    console.log(food);
     const foodDiv = document.createElement('div');
     foodDiv.className = 'col-lg-4';
     foodDiv.setAttribute('data-id', `${food.idMeal}`);
