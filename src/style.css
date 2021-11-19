@@ -82,10 +82,13 @@ body {
   width: 100%;
 }
 
+<<<<<<< HEAD
 .like-btn {
   cursor: pointer;
 }
 
+=======
+>>>>>>> 1ec3c1313a3b7c0b3cb10d0253948030d8891abf
 .recipe-meal-img img {
   width: 150px;
   height: 150px;
@@ -96,4 +99,11 @@ body {
 
 ::placeholder {
   font-style: italic;
+<<<<<<< HEAD
+=======
+}
+
+.like-btn {
+  cursor: pointer;
+>>>>>>> 1ec3c1313a3b7c0b3cb10d0253948030d8891abf
 }
