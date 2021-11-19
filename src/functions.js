@@ -47,8 +47,26 @@ const postComment = async (data) => {
   return response.ok;
 };
 
-const mealModal = (meal) => {
-  console.log(meal);
+const getComment = async (item) => {
+  const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/Fp12eL7c25FQ3gxVeMCZ/comments?item_id=${item.idMeal}`;
+  let myComment = await fetch(url).then((response) => response.json());
+  const ul = document.querySelector('#list-comment');
+  ul.innerHTML = '';
+  const h3 = document.querySelector('.comment-count');
+  h3.innerHTML = `Comments(${myComment.length ? myComment.length : 0})`;
+  if (!myComment.length) myComment = [];
+  myComment.forEach((comment) => {
+    ul.innerHTML += `
+      <li class="d-flex justify-content-start align-items-center">
+        <p class="me-3">${comment.creation_date}</p>
+        <p class="me-3">${comment.username}</p>
+        <p>${comment.comment}</p>
+      </li>
+    `;
+  });
+};
+
+const mealModal = async (meal) => {
   [meal] = meal;
   mealDetailsContent.innerHTML = `
     <h2 class = "recipe-title">${meal.strMeal}</h2>
@@ -60,11 +78,10 @@ const mealModal = (meal) => {
     <div class = "recipe-meal-img">
       <img src = "${meal.strMealThumb}" alt = "">
     </div>
-    <h3 class="m-3">Comments(2)</h3>
+    <h3 class="m-3 comment-count"></h3>
     <div class="d-flex justify-content-center align-items-center">
-      <p class="me-3">date</p>
-      <p class="me-3">name</p>
-      <p>comment</p>
+      <ul id="list-comment" class="list-unstyled">
+      </ul>
     </div>
     <h3 class="m-3">Add a comment</h3>
     <form autocomplete="off" class="w-50 mx-auto">
@@ -88,7 +105,11 @@ const mealModal = (meal) => {
     postComment(newData);
     document.querySelector('#commentator').value = '';
     document.querySelector('#comment').value = '';
+    setTimeout(() => {
+      getComment(meal);
+    }, 1000);
   });
+  getComment(meal);
 };
 
 const getMeal = async (e) => {
