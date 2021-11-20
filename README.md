@@ -19,8 +19,8 @@
 - JAVASCRIPT
 
 ## 🖥️ Live Demo
-- [Demo](https://raw.githack.com/Qoosim/JavaScript-Group-Capstone/dev/src/index.html):point_left:
-- [Project Presentation](https://www.youtube.com/watch?v=EGx1ywZLGCA):point_left:
+- [Demo](https://laughing-hodgkin-321112.netlify.app/) :point_left:
+- [Project Presentation](https://www.youtube.com/watch?v=EGx1ywZLGCA) :point_left:
 
 ## Getting Started
 
