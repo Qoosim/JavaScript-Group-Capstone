@@ -20,7 +20,7 @@
 
 ## 🖥️ Live Demo
 - [Demo](https://laughing-hodgkin-321112.netlify.app/) :point_left:
-- [Project Presentation](https://www.youtube.com/watch?v=EGx1ywZLGCA) :point_left:
+- [Project Presentation](https://youtu.be/QIpw0E4BlwE) :point_left:
 
 ## Getting Started
 
